@@ -3,68 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Srimathi M - Portfolio</title>
+  <title>Calculator - Task 3</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <h1>Online Portfolio</h1>
-      <p class="tagline">Just another My Blog site</p>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Skill</a></li>
-          <li><a href="#">Testimonial</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-text">
-        <h2>Srimathi M</h2>
-        <p>
-          Hi, I am a second year student studying in Rajalakshmi Institute of Technology.
-          I'm interested in Cyber Security and very passionate about learning more in this field...
-        </p>
-        <a href="#" class="btn">Hire Me</a>
-      </div>
-      <div class="hero-img">
-        <img src="cutesrimathi.jpg" alt="Srimathi Photo" />
-      </div>
-    </div>
-  </section>
+  <div class="calculator">
+    <h1>Simple calculator</h1>
+    <input type="text" id="display" readonly />
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="append('/')">/</button>
+      <button onclick="append('*')">*</button>
+      <button onclick="append('-')">-</button>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="container about-container">
-      <div class="about-text">
-        <h3>ABOUT MYSELF</h3>
-        <p>
-          I am a college student with a completion certificate in the 1M1B Green Internship
-          and have interned at CodSoft as well as Infosys Springboard.
-        </p>
-        <p>
-          Skilled in HTML, CSS, JavaScript, Python, and C. I’m passionate about coding and
-          adapt quickly to new environments.
-        </p>
-        <a href="resume.pdf" class="btn">Check My Resume</a>
-      </div>
-      <div class="about-img">
-        <img src="srimathi.jpg" alt="Srimathi About Image" />
-      </div>
-    </div>
-  </section>
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('+')">+</button>
 
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="backspace()">⌫</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="calculate()">=</button>
+
+      <button onclick="append('0')" style="grid-column: span 2;">0</button>
+      <button onclick="append('.')">.</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
